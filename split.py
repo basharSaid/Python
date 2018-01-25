@@ -1,36 +1,10 @@
 import collections
-from collections import Counter
 
 file = open('document.txt')
 re = file.read()
-a = re.split()
+wort = re.split()
+cnt = collections.Counter(wort)
 
-cnt=Counter()
-cnt.update(a)
-
-print(cnt)
-
-
+for i in cnt:
+    print ('%s : %d' % (i, cnt[i]))
     
-
-        
-
-        
-
-        
-
- 
-    
-
-        
-
-
-
-
-
-
-
-
-
-
-
