@@ -9,7 +9,7 @@ def home():
     return page
 
 
-@app.route("/hello")
+@app.route("/hello/")
 def hello():
     return u"""
     <h1 style="direction:rtl">
