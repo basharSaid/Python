@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>الصّفحة الرّئيسيّة</title>
+</head>
+<body style="direction: rtl;">
+    <h1>السّلام عليكم ورحمة الله</h1>
+    <h3>{{page}}</h3>
+{% for post in posts %}
+	<p> {{ post }} </p>
+{% endfor %}
+</body>
+</html>
