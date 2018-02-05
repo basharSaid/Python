@@ -7,12 +7,12 @@ app = Flask(__name__)
 # Home Page
 @app.route("/")
 def home():
-    return render_template('test.html', page = u"الصّفحة الرّئيسيّة")
+    return render_template('flask_template.html', page = u"الصّفحة الرّئيسيّة")
 
 # Hello Page
 @app.route("/hello/")
 def hello():
-    return render_template('test.html', page = u"صفحة التّرحيب")
+    return render_template('flask_template.html', page = u"صفحة التّرحيب")
 
 
 if __name__ == "__main__":
