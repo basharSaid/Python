@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>الصّفحة الرّئيسيّة</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='../static/css/flask_posts.css')}}">
 </head>
 <body style="direction: rtl;">
     <img src="{{ url_for('static', filename='../static/img/afrin.jpg')}}" />
-    <h1>السّلام عليكم ورحمة الله</h1>
+    <h1>Hello evrybody</h1>
     <h3>{{page}}</h3>
 {% for post in posts %}
 	<p> {{ post }} </p>
